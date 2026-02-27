@@ -1213,17 +1213,28 @@ img {
         margin-top: 3rem;
     }
 
-    /* Fix Hero Profile Picture for Mobile */
-    .hero-profile {
-        margin-bottom: 1rem;
-        display: flex;
-        justify-content: center;
+    /* Stack Hero Image and Text for Mobile */
+    .hero-split {
+        flex-direction: column-reverse;
+        gap: 2rem;
+        text-align: center;
     }
 
-    .hero-profile-img {
-        width: 130px;
-        height: 130px;
-        border-width: 2px;
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-photo {
+        margin-bottom: 0.5rem;
+    }
+
+    .hero-photo-img {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        /* Circle looks better on mobile */
+        border-width: 3px;
+        box-shadow: 0 0 20px rgba(212, 164, 76, .3);
     }
 
     /* Adjust padding for mobile cards */
@@ -1275,9 +1286,9 @@ img {
 }
 
 @media (max-width: 480px) {
-    .hero-profile-img {
-        width: 110px;
-        height: 110px;
+    .hero-photo-img {
+        width: 140px;
+        height: 140px;
     }
 
     .hero-name {
