@@ -1205,6 +1205,19 @@ img {
         font-size: 1.05rem;
     }
 
+    /* Fix Hero Profile Picture for Mobile */
+    .hero-profile {
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-profile-img {
+        width: 130px;
+        height: 130px;
+        border-width: 2px;
+    }
+
     /* Adjust padding for mobile cards */
     .project-card {
         padding: 1.5rem;
@@ -1254,8 +1267,18 @@ img {
 }
 
 @media (max-width: 480px) {
+    .hero-profile-img {
+        width: 110px;
+        height: 110px;
+    }
+
     .hero-name {
         font-size: clamp(1.8rem, 8vw, 2.8rem);
+        margin-bottom: 0.5rem;
+    }
+
+    .hero-title {
+        font-size: 1rem;
     }
 
     .section-title {
