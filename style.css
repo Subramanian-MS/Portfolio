@@ -828,11 +828,18 @@ img {
 .project-outcome {
     font-size: .9rem;
     color: var(--light-text-secondary);
-    padding: 1rem 1.25rem;
-    background: #f8fafc;
     border-left: 4px solid var(--light-gold-text);
     border-radius: 4px;
     margin-top: auto;
+}
+
+.project-links {
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid var(--light-border);
+    display: flex;
+    gap: 1rem;
+    align-items: center;
 }
 
 .project-outcome strong {
@@ -1196,6 +1203,27 @@ img {
 
     .nav-links a {
         font-size: 1.05rem;
+    }
+
+    /* Adjust padding for mobile cards */
+    .project-card {
+        padding: 1.5rem;
+    }
+
+    .timeline-content {
+        padding: 1.25rem;
+    }
+
+    .education-card {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1.5rem;
+        gap: 1rem;
+    }
+
+    /* Ensure flex wraps for long links */
+    .project-links {
+        flex-wrap: wrap;
     }
 
     .about-grid {
