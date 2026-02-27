@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subramanian Mathur Seetharaman | Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Subramanian Mathur Seetharaman — Application Support Analyst specialising in Microsoft Dynamics 365, Power BI, SQL, and Data Analytics.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <a href="#hero" class="nav-logo">S<span class="gold">.</span>M<span class="gold">.</span>S</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about"><i class="far fa-user" style="margin-right: 6px;"></i>About</a></li>
+            <li><a href="#experience"><i class="far fa-id-badge" style="margin-right: 6px;"></i>Experience</a></li>
+            <li><a href="#projects"><i class="fas fa-laptop-code" style="margin-right: 6px;"></i>Projects</a></li>
+            <li><a href="#contact"><i class="far fa-envelope" style="margin-right: 6px;"></i>Contact</a></li>
+        </ul>
+        <div class="nav-cta" style="margin-left: 1.5rem;">
+            <a href="Certificate/Subramanian MS-CV (1).pdf" target="_blank" class="btn btn-outline"
+                style="padding: 0.5rem 1.25rem; font-size: 0.85rem;"><i class="fas fa-file-pdf"></i> Download CV</a>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-glow"></div>
+        <div class="hero-content hero-split">
+            <div class="hero-text">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">Subramanian<br><span class="gold">Mathur Seetharaman</span></h1>
+                <p class="hero-title" id="heroTitle"></p>
+                <p class="hero-statement">Transforming enterprise data into measurable business impact through analytics
+                    and BI solutions.</p>
+
+                <div class="hero-links" style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem;">
+                    <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Get in Touch</a>
+                    <a href="https://www.linkedin.com/in/subramanian-m-s-2280bb202/" target="_blank"
+                        class="btn btn-outline" style="padding: 0.8rem 1.2rem; min-width: auto;"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Subramanian-MS/" target="_blank" class="btn btn-outline"
+                        style="padding: 0.8rem 1.2rem; min-width: auto;"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="hero-photo">
+                <img src="images/Cover pic.JPG" alt="Subramanian Mathur Seetharaman" class="hero-photo-img">
+            </div>
+        </div>
+        <div class="hero-scroll-hint">
+            <span>Scroll for more</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title"><span class="gold"><i class="fas fa-user"></i></span> About Me</h2>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>I am a Data Analyst and Microsoft Dynamics 365 professional with over 3 years of experience
+                        working with enterprise business systems, data analysis, and reporting solutions.</p>
+                    <p>My expertise includes Microsoft Dynamics 365 (Finance &amp; Operations and POS), Power BI
+                        dashboard development, SQL data analysis, and business intelligence reporting. I have experience
+                        supporting enterprise applications, developing interactive dashboards, and transforming complex
+                        datasets into actionable insights.</p>
+                    <p>I recently completed my MSc in Data Science and Analytics at the University of Leeds, where I
+                        developed strong skills in machine learning, statistical modelling, and data analysis.</p>
+                    <p>I’m actively seeking opportunities in Data Analytics and Business Intelligence within enterprise
+                        environments.</p>
+                </div>
+                <div class="about-highlights reveal">
+                    <div class="highlight-card">
+                        <div class="highlight-icon"><i class="fas fa-briefcase"></i></div>
+                        <h3>3+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <h3>MSc</h3>
+                        <p>Data Science &amp; Analytics</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon"><i class="fas fa-chart-bar"></i></div>
+                        <h3>5+</h3>
+                        <p>Key Projects</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <div class="expertise-header reveal">
+                <div>
+                    <span class="expertise-label gold">Expertise</span>
+                    <h2 class="expertise-title">My key areas of<br>expertise.</h2>
+                </div>
+                <p class="expertise-desc">I specialise in transforming complex datasets into clear, actionable insights.
+                    My technical toolkit allows me to build intuitive dashboards, streamline reporting processes, and
+                    support critical enterprise operations through continuous learning.</p>
+            </div>
+
+            <h3 class="expertise-group-label reveal">Core Skills</h3>
+            <div class="expertise-grid reveal">
+                <div class="expertise-card">
+                    <i class="fas fa-desktop"></i>
+                    <span>Application<br>Support</span>
+                </div>
+                <div class="expertise-card">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>Business<br>Intelligence</span>
+                </div>
+                <div class="expertise-card">
+                    <i class="fas fa-magnifying-glass-chart"></i>
+                    <span>Data<br>Analysis</span>
+                </div>
+                <div class="expertise-card">
+                    <i class="fas fa-gauge-high"></i>
+                    <span>Dashboard<br>Development</span>
+                </div>
+                <div class="expertise-card">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Reporting &amp;<br>KPI Analysis</span>
+                </div>
+                <div class="expertise-card">
+                    <i class="fas fa-square-root-variable"></i>
+                    <span>Statistical<br>Analysis</span>
+                </div>
+                <div class="expertise-card">
+                    <i class="fas fa-brain"></i>
+                    <span>Machine<br>Learning</span>
+                </div>
+            </div>
+
+            <h3 class="expertise-group-label reveal">Technical Skills</h3>
+            <div class="expertise-grid reveal">
+                <!-- Row 1 -->
+                <div class="expertise-card">
+                    <i class="devicon-microsoftsqlserver-plain"></i>
+                    <span>Microsoft<br>Dynamics 365</span>
+                </div>
+                <div class="expertise-card">
+                    <i class="fas fa-chart-pie"></i>
+                    <span>Power BI</span>
+                </div>
+                <div class="expertise-card">
+                    <i class="devicon-mysql-plain"></i>
+                    <span>MySQL</span>
+                </div>
+                <div class="expertise-card">
+                    <i class="fas fa-bolt"></i>
+                    <span>Power<br>Platform</span>
+                </div>
+                <div class="expertise-card">
+                    <i class="devicon-python-plain"></i>
+                    <span>Python</span>
+                </div>
+                <!-- Row 2 -->
+                <div class="expertise-card">
+                    <i class="devicon-apachespark-plain"></i>
+                    <span>PySpark</span>
+                </div>
+                <div class="expertise-card">
+                    <i class="devicon-azure-plain"></i>
+                    <span>Microsoft<br>Azure</span>
+                </div>
+                <div class="expertise-card">
+                    <i class="devicon-amazonwebservices-plain-wordmark"></i>
+                    <span>AWS Cloud</span>
+                </div>
+                <div class="expertise-card">
+                    <i class="fas fa-file-excel"></i>
+                    <span>Excel</span>
+                </div>
+                <div class="expertise-card">
+                    <i class="devicon-r-plain"></i>
+                    <span>R</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="section" id="projects">
+        <div class="container">
+            <h2 class="section-title"><span class="gold"><i class="fas fa-layer-group"></i></span> Projects</h2>
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <article class="project-card reveal" id="project-aviation">
+                    <div class="project-header">
+                        <div class="project-icon-wrapper">
+                            <i class="fas fa-plane-departure"></i>
+                        </div>
+                        <div class="project-title-area">
+                            <h3>UK Aviation Performance Dashboard</h3>
+                        </div>
+                    </div>
+
+                    <div class="project-tags">
+                        <span class="project-tag"><i class="fas fa-chart-pie" style="margin-right: 4px;"></i>Power
+                            BI</span>
+                        <span class="project-tag"><i class="fas fa-file-excel"
+                                style="margin-right: 4px;"></i>Excel</span>
+                        <span class="project-tag"><i class="fas fa-code" style="margin-right: 4px;"></i>DAX</span>
+                    </div>
+
+                    <p class="project-desc">Developed an interactive Power BI dashboard to analyse UK aviation
+                        performance, including flight delays, airline performance, and airport efficiency.</p>
+
+                    <ul class="project-features">
+                        <li>Analysed 738,000+ flights to identify performance patterns</li>
+                        <li>Created KPI indicators for delay trends and on-time performance</li>
+                        <li>Provided insights into airline performance using UK CAA data</li>
+                    </ul>
+
+                    <div class="project-links"
+                        style="margin-top: auto; padding-top: 1rem; border-top: 1px solid var(--light-border); display: flex; gap: 1rem;">
+                        <a href="https://github.com/Subramanian-MS/UK-Aviation-Performance-PowerBI" target="_blank"
+                            class="btn-doc"
+                            style="display: inline-flex; align-items: center; gap: 0.5rem; color: var(--light-accent-blue); font-weight: 600; font-size: 0.9rem; text-decoration: none; transition: color 0.3s;">
+                            <i class="fab fa-github" style="font-size: 1.1rem;"></i> View on GitHub
+                        </a>
+                        <a href="https://github.com/Subramanian-MS/UK-Aviation-Performance-PowerBI/blob/main/Aviation_Dashboard/UK%20Aviation%20Performance%20Dashboard%20(Jan%E2%80%93May%202025)-Pdf.pdf"
+                            target="_blank" class="btn-doc"
+                            style="display: inline-flex; align-items: center; gap: 0.5rem; color: #d32f2f; font-weight: 600; font-size: 0.9rem; text-decoration: none; transition: color 0.3s;">
+                            <i class="fas fa-file-pdf" style="font-size: 1.1rem;"></i> View PDF Dashboard
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card reveal" id="project-clustering">
+                    <div class="project-header">
+                        <div class="project-icon-wrapper">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="project-title-area">
+                            <h3>Clustering Analysis using Machine Learning</h3>
+                        </div>
+                    </div>
+
+                    <div class="project-tags">
+                        <span class="project-tag"><i class="devicon-python-plain"
+                                style="margin-right: 4px;"></i>Python</span>
+                        <span class="project-tag"><i class="fas fa-robot"
+                                style="margin-right: 4px;"></i>Scikit-learn</span>
+                        <span class="project-tag"><i class="fas fa-compress-arrows-alt"
+                                style="margin-right: 4px;"></i>PCA</span>
+                    </div>
+
+                    <p class="project-desc">Compared K-means, DBSCAN, GMM, and Hierarchical clustering algorithms on
+                        synthetic high-dimensional data and the UCI Human Activity Recognition dataset.</p>
+
+                    <ul class="project-features">
+                        <li>Evaluated performance using external (ARI) and internal (Silhouette) metrics</li>
+                        <li>Analysed the impact of dimensionality reduction using PCA</li>
+                        <li>Assessed algorithm resilience to noise and irregular cluster shapes</li>
+                    </ul>
+
+                    <div class="project-links"
+                        style="margin-top: auto; padding-top: 1rem; border-top: 1px solid var(--light-border);">
+                        <a href="https://github.com/Subramanian-MS/MSc-Dissertation" target="_blank" class="btn-doc"
+                            style="display: inline-flex; align-items: center; gap: 0.5rem; color: var(--light-accent-blue); font-weight: 600; font-size: 0.9rem; text-decoration: none; transition: color 0.3s;">
+                            <i class="fab fa-github" style="font-size: 1.1rem;"></i> View on GitHub
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card reveal" id="project-d365">
+                    <div class="project-header">
+                        <div class="project-icon-wrapper">
+                            <i class="devicon-microsoftsqlserver-plain"></i>
+                        </div>
+                        <div class="project-title-area">
+                            <h3>Microsoft Dynamics 365 Reporting &amp; Support</h3>
+                        </div>
+                    </div>
+
+                    <div class="project-tags">
+                        <span class="project-tag"><i class="fas fa-cogs" style="margin-right: 4px;"></i>D365
+                            F&amp;O</span>
+                        <span class="project-tag"><i class="fas fa-database" style="margin-right: 4px;"></i>SQL</span>
+                        <span class="project-tag"><i class="fas fa-chart-pie" style="margin-right: 4px;"></i>Power
+                            BI</span>
+                    </div>
+
+                    <p class="project-desc">Worked with enterprise Microsoft Dynamics 365 systems to support reporting,
+                        data extraction, and business process analysis.</p>
+
+                    <ul class="project-features">
+                        <li>Developed SQL queries for business reporting</li>
+                        <li>Supported enterprise ERP applications</li>
+                        <li>Assisted with business reporting and analysis</li>
+                    </ul>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="project-card reveal" id="project-outbreak">
+                    <div class="project-header">
+                        <div class="project-icon-wrapper">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <div class="project-title-area">
+                            <h3>Disease Outbreak Detection using Statistical Modelling</h3>
+                        </div>
+                    </div>
+
+                    <div class="project-tags">
+                        <span class="project-tag"><i class="devicon-r-plain" style="margin-right: 4px;"></i>R</span>
+                        <span class="project-tag"><i class="fas fa-chart-line"
+                                style="margin-right: 4px;"></i>Statistical Modelling</span>
+                    </div>
+
+                    <p class="project-desc">Applied statistical models to detect disease outbreaks using time-series
+                        analysis.</p>
+
+                    <ul class="project-features">
+                        <li>Built predictive models using statistical techniques</li>
+                        <li>Analysed time-series health data</li>
+                        <li>Identified outbreak patterns</li>
+                    </ul>
+                </article>
+
+                <!-- Project 5 -->
+                <article class="project-card reveal" id="project-rehoming">
+                    <div class="project-header">
+                        <div class="project-icon-wrapper">
+                            <i class="fas fa-paw"></i>
+                        </div>
+                        <div class="project-title-area">
+                            <h3>Statistical Analysis of Rehoming Data</h3>
+                        </div>
+                    </div>
+
+                    <div class="project-tags">
+                        <span class="project-tag"><i class="devicon-python-plain"
+                                style="margin-right: 4px;"></i>Python</span>
+                        <span class="project-tag"><i class="devicon-r-plain" style="margin-right: 4px;"></i>R</span>
+                    </div>
+
+                    <p class="project-desc">Performed statistical analysis on adoption and rehoming data to identify
+                        trends and predictive factors.</p>
+
+                    <ul class="project-features">
+                        <li>Conducted hypothesis testing</li>
+                        <li>Performed data cleaning and analysis</li>
+                        <li>Developed statistical models</li>
+                    </ul>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section class="section section-alt" id="experience">
+        <div class="container">
+            <h2 class="section-title"><span class="gold"><i class="fas fa-briefcase"></i></span> Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Application Development Analyst</h3>
+                            <span class="timeline-company">Accenture</span>
+                        </div>
+                        <span class="timeline-date">December 2022 &ndash; August 2024</span>
+                        <div class="timeline-photo">
+                            <img src="images/Accenture.jpg" alt="At Accenture">
+                        </div>
+                        <ul>
+                            <li>Worked with Microsoft Dynamics 365 systems</li>
+                            <li>Developed SQL queries and reports</li>
+                            <li>Supported enterprise applications</li>
+                            <li>Built dashboards and reports</li>
+                        </ul>
+                        <div class="timeline-docs">
+                            <a href="Certificate/13596700_Relieving Letter(Automatic).pdf" target="_blank"
+                                class="btn-doc">
+                                <i class="fas fa-file-pdf"></i> View Experience Letter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Data Researcher</h3>
+                            <span class="timeline-company">Happy City Hub</span>
+                        </div>
+                        <span class="timeline-date">November 2025 &ndash; February 2026</span>
+                        <ul>
+                            <li>Conducted data collection and research analysis</li>
+                            <li>Processed and cleaned large datasets for quality-of-life studies</li>
+                            <li>Generated statistical reports and data visualisations</li>
+                            <li>Collaborated with academic researchers on data-driven insights</li>
+                        </ul>
+                        <div class="timeline-docs">
+                            <a href="Certificate/Happy city hub.pdf" target="_blank" class="btn-doc">
+                                <i class="fas fa-file-pdf"></i> View Authorization Letter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EDUCATION ===== -->
+    <section class="section" id="education">
+        <div class="container">
+            <h2 class="section-title"><span class="gold"><i class="fas fa-graduation-cap"></i></span> Education</h2>
+            <div class="education-grid">
+                <div class="education-card reveal">
+                    <div class="education-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="education-info">
+                        <h3>MSc Data Science &amp; Analytics</h3>
+                        <span class="education-school">University of Leeds &mdash; United Kingdom</span>
+                        <span class="education-date">2024 &ndash; 2025</span>
+                        <span class="education-grade">Graduated with Merit</span>
+                    </div>
+                </div>
+                <div class="education-card reveal">
+                    <div class="education-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="education-info">
+                        <h3>Bachelor of Technology in Information Technology</h3>
+                        <span class="education-school">Anna University &mdash; India</span>
+                        <span class="education-date">2018 &ndash; 2022</span>
+                        <span class="education-grade">First Class Honours</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ACHIEVEMENTS ===== -->
+    <section class="section" id="achievements">
+        <div class="container">
+            <h2 class="section-title"><span class="gold"><i class="fas fa-trophy"></i></span> Certifications &amp;
+                Achievements</h2>
+            <div class="achievements-grid">
+
+                <a href="Certificate/images/1760463335709.jpg" target="_blank" class="achievement-card reveal">
+                    <div class="achievement-img">
+                        <img src="Certificate/images/1760463335709.jpg" alt="Microsoft Power BI Data Analyst">
+                    </div>
+                    <div class="achievement-info">
+                        <h3>Microsoft Power BI Data Analyst</h3>
+                        <span class="achievement-issuer">Microsoft / Coursera &mdash; Professional Certificate</span>
+                        <span class="achievement-date">October 2025</span>
+                    </div>
+                </a>
+
+                <a href="Certificate/images/Ai_Fundamentals.jpg" target="_blank" class="achievement-card reveal">
+                    <div class="achievement-img">
+                        <img src="Certificate/images/Ai_Fundamentals.jpg"
+                            alt="Microsoft Certified: Azure AI Fundamentals">
+                    </div>
+                    <div class="achievement-info">
+                        <h3>Microsoft Certified: Azure AI Fundamentals</h3>
+                        <span class="achievement-issuer">Microsoft &mdash; Certiport</span>
+                        <span class="achievement-date">May 2025</span>
+                    </div>
+                </a>
+
+                <a href="Certificate/images/Excel_Certificate.jpg" target="_blank" class="achievement-card reveal">
+                    <div class="achievement-img">
+                        <img src="Certificate/images/Excel_Certificate.jpg"
+                            alt="Microsoft Office Specialist: Excel Associate">
+                    </div>
+                    <div class="achievement-info">
+                        <h3>Microsoft Office Specialist: Excel Associate</h3>
+                        <span class="achievement-issuer">Microsoft &mdash; Certiport</span>
+                        <span class="achievement-date">December 2024</span>
+                    </div>
+                </a>
+
+                <a href="Certificate/1744036234945.jpg" target="_blank" class="achievement-card reveal">
+                    <div class="achievement-img">
+                        <img src="Certificate/1744036234945.jpg" alt="NHS Data Virtual Work Experience">
+                    </div>
+                    <div class="achievement-info">
+                        <h3>NHS Data Virtual Work Experience</h3>
+                        <span class="achievement-issuer">Digdata &mdash; STEP UP NHS Programme</span>
+                        <span class="achievement-date">March 2025</span>
+                    </div>
+                </a>
+
+                <a href="Certificate/images/1749824377537_(1).jpg" target="_blank" class="achievement-card reveal">
+                    <div class="achievement-img">
+                        <img src="Certificate/images/1749824377537_(1).jpg" alt="Azure AI Workshop">
+                    </div>
+                    <div class="achievement-info">
+                        <h3>Azure AI Workshop</h3>
+                        <span class="achievement-issuer">Leeds Artificial Intelligence Society</span>
+                        <span class="achievement-date">2024</span>
+                    </div>
+                </a>
+
+                <a href="Certificate/1772124144812.jpg" target="_blank" class="achievement-card reveal">
+                    <div class="achievement-img">
+                        <img src="Certificate/1772124144812.jpg" alt="Accenture Tech Expressway Programme">
+                    </div>
+                    <div class="achievement-info">
+                        <h3>Tech Expressway Programme</h3>
+                        <span class="achievement-issuer">Accenture</span>
+                        <span class="achievement-date">2021</span>
+                    </div>
+                </a>
+
+                <a href="Certificate/1619276665605.jpg" target="_blank" class="achievement-card reveal">
+                    <div class="achievement-img">
+                        <img src="Certificate/1619276665605.jpg" alt="Face Recognition using Python">
+                    </div>
+                    <div class="achievement-info">
+                        <h3>Face Recognition using Python</h3>
+                        <span class="achievement-issuer">GUVI</span>
+                        <span class="achievement-date">April 2021</span>
+                    </div>
+                </a>
+
+                <a href="Certificate/images/1739214818656.jpg" target="_blank" class="achievement-card reveal">
+                    <div class="achievement-img">
+                        <img src="Certificate/images/1739214818656.jpg" alt="MATLAB Onramp">
+                    </div>
+                    <div class="achievement-info">
+                        <h3>MATLAB Onramp</h3>
+                        <span class="achievement-issuer">MathWorks</span>
+                        <span class="achievement-date">February 2025</span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section" id="contact">
+        <div class="container" style="text-align: center; max-width: 650px;">
+            <h2 class="section-title"><span class="gold"><i class="fas fa-paper-plane"></i></span> Let's Connect</h2>
+            <div class="reveal">
+                <p style="color: var(--text-muted); margin-bottom: 3rem; font-size: 1.1rem; line-height: 1.8;">
+                    I’m actively seeking opportunities in Data Analytics and Business Intelligence within enterprise
+                    environments. Whether you have a question or an opportunity to discuss, I’ll be happy to connect.
+                </p>
+                <a href="mailto:subru.ms57@gmail.com" class="btn btn-primary"
+                    style="font-size: 1.1rem; padding: 1rem 2.5rem;"><i class="fas fa-envelope"></i> Send a Message</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-socials" style="display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1.5rem;">
+            <a href="https://github.com/Subramanian-MS/" target="_blank"
+                style="font-size: 1.4rem; color: var(--text-muted); transition: color 0.3s;"><i
+                    class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/subramanian-m-s-2280bb202/" target="_blank"
+                style="font-size: 1.4rem; color: var(--text-muted); transition: color 0.3s;"><i
+                    class="fab fa-linkedin"></i></a>
+        </div>
+        <p>&copy; 2025 Subramanian Mathur Seetharaman. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
