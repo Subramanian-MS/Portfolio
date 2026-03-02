@@ -38,6 +38,16 @@
         });
     });
 
+    // Close nav when clicking outside the menu
+    document.addEventListener('click', (e) => {
+        if (navLinks.classList.contains('open') &&
+            !navLinks.contains(e.target) &&
+            !navToggle.contains(e.target)) {
+            navToggle.classList.remove('active');
+            navLinks.classList.remove('open');
+        }
+    });
+
     // ──── Scroll Reveal ────
     const reveals = document.querySelectorAll('.reveal');
     const revealObserver = new IntersectionObserver(
