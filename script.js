@@ -24,29 +24,35 @@
     // ──── Mobile Nav Toggle ────
     const navToggle = document.getElementById('navToggle');
     const navLinks = document.getElementById('navLinks');
+    const navOverlay = document.getElementById('navOverlay');
+
+    function openNav() {
+        navToggle.classList.add('active');
+        navLinks.classList.add('open');
+        navOverlay.classList.add('active');
+    }
+
+    function closeNav() {
+        navToggle.classList.remove('active');
+        navLinks.classList.remove('open');
+        navOverlay.classList.remove('active');
+    }
 
     navToggle.addEventListener('click', () => {
-        navToggle.classList.toggle('active');
-        navLinks.classList.toggle('open');
+        if (navLinks.classList.contains('open')) {
+            closeNav();
+        } else {
+            openNav();
+        }
     });
 
     // Close nav on link click
     navLinks.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-            navToggle.classList.remove('active');
-            navLinks.classList.remove('open');
-        });
+        link.addEventListener('click', () => closeNav());
     });
 
-    // Close nav when clicking outside the menu
-    document.addEventListener('click', (e) => {
-        if (navLinks.classList.contains('open') &&
-            !navLinks.contains(e.target) &&
-            !navToggle.contains(e.target)) {
-            navToggle.classList.remove('active');
-            navLinks.classList.remove('open');
-        }
-    });
+    // Close nav when clicking the backdrop overlay
+    navOverlay.addEventListener('click', () => closeNav());
 
     // ──── Scroll Reveal ────
     const reveals = document.querySelectorAll('.reveal');

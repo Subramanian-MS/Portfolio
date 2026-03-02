@@ -178,6 +178,18 @@ img {
     display: none;
 }
 
+/* Mobile menu backdrop — hidden by default */
+.nav-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
 /* Mobile toggle */
 .nav-toggle {
     display: none;
@@ -1204,6 +1216,11 @@ img {
 
     .nav-links.open {
         right: 0;
+    }
+
+    /* Dark backdrop overlay behind the slide-out menu */
+    .nav-overlay.active {
+        display: block;
     }
 
     /* Hide the Download CV button from the top navbar on mobile */
