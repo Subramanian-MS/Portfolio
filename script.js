@@ -55,6 +55,44 @@
     let currentTab = 'hesa';
 
     // ──────────────────────────────────────────────────────────────────────────
+    // 1b. TYPING EFFECT (Hero Roles)
+    // ──────────────────────────────────────────────────────────────────────────
+    const heroTitle = document.getElementById('heroTitle');
+    const roles = [
+        'Data Analyst',
+        'BI Specialist',
+        'Power BI Developer',
+        'SQL & Data Analytics'
+    ];
+    let roleIndex = 0;
+    let charIndex = roles[0].length;
+    let isDeleting = true;
+
+    function typeRoles() {
+        if (!heroTitle) return;
+        const current = roles[roleIndex];
+        if (isDeleting) {
+            heroTitle.textContent = current.substring(0, charIndex--);
+            if (charIndex < 0) {
+                isDeleting = false;
+                roleIndex = (roleIndex + 1) % roles.length;
+                setTimeout(typeRoles, 350);
+                return;
+            }
+            setTimeout(typeRoles, 40);
+        } else {
+            heroTitle.textContent = current.substring(0, charIndex++);
+            if (charIndex > current.length) {
+                isDeleting = true;
+                setTimeout(typeRoles, 2000);
+                return;
+            }
+            setTimeout(typeRoles, 75);
+        }
+    }
+    setTimeout(typeRoles, 1500);
+
+    // ──────────────────────────────────────────────────────────────────────────
     // 2. SCROLL PROGRESS & NAVBAR
     // ──────────────────────────────────────────────────────────────────────────
     const progressBar = document.getElementById('scrollProgress');
