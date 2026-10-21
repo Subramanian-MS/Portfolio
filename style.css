@@ -371,7 +371,7 @@ img {
     font-size: clamp(1.35rem, 1.8vw, 1.65rem);
     font-weight: 700;
     color: var(--blue-light);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.85rem;
     min-height: 2.2rem;
     display: inline-flex;
     align-items: center;
@@ -396,13 +396,13 @@ img {
     margin-bottom: 1.35rem;
 }
 
-/* Folded 2-3 sentence bio */
+/* Punchy, Outcome-Focused Hero Bio */
 .hero-bio {
-    font-size: clamp(1.05rem, 1.12vw, 1.16rem);
+    font-size: clamp(1.05rem, 1.15vw, 1.18rem);
     color: #cbd5e1;
-    line-height: 1.75;
-    max-width: 660px;
-    margin-bottom: 1.75rem;
+    line-height: 1.8;
+    max-width: 600px;
+    margin-bottom: 2.25rem;
 }
 
 /* 3 Strong Proof Points */
