@@ -23,16 +23,16 @@
             outcome: "Colour-codes each university above or below the Russell Group average, with rankings, seven-year trends, subject-level gaps and salary bands."
         },
         nicu: {
-            title: "NHS Neonatal Intensive Care Outcomes 2023/24: Clinical Audit & BadgerNet Data Quality",
-            question: "How do England's 24 Level 3 Neonatal Intensive Care Units compare on BadgerNet episode completeness and clinical care?",
+            title: "NHS Neonatal Intensive Care Outcomes 2023/24: Clinical Audit & MSDS Data Quality",
+            question: "How do England's 24 Level 3 Neonatal Intensive Care Trusts compare on baby record completeness (MSD401) and perinatal care?",
             embedUrl: "https://subramanian-ms.github.io/nhs-neonatal-outcomes-dashboard/",
-            coverImg: "images/NHS_Neonatal_cover.png",
+            coverImg: "images/NHS_Neonatal_cover.png?v=20261031d",
             coverAlt: "NHS Neonatal Intensive Care Outcomes 2023/24 Dashboard",
-            tags: ["Python (pandas)", "BadgerNet data quality", "NHS disclosure control", "NNAP clinical audit", "22 automated checks"],
-            summary: "An interactive clinical audit dashboard comparing all 24 English Level 3 Neonatal Intensive Care Units (NICUs) across Operational Delivery Networks (including Yorkshire & Humber) on BadgerNet completeness, admission normothermia, deferred cord clamping, late-onset infection, breastmilk nutrition and 2-year follow-up.",
-            prep: "Filtered multi-year NNAP and BadgerNet tables to the 24 Level 3 NICUs by NHS ODS code, standardised clinical cohort definitions, and built unit and ODN network lookup tables via a repeatable Python pipeline.",
-            validation: "Applied NHS England statistical disclosure control (rounding to nearest 5, suppressing <8 episodes, flagging <25 for wide 95% CIs) and built 22 automated reconciliation checks against published tables.",
-            outcome: "Enables instant benchmarking by ODN region or individual hospital (e.g. Leeds Children's Hospital) against the National NICU average across 7-year trajectories, 16 clinical cohorts, and 14 gestational age bands."
+            tags: ["Python (pandas)", "NHS England open data", "NHS disclosure control", "MSDS data quality", "22 automated checks"],
+            summary: "An interactive clinical and data-quality dashboard comparing all 24 English Level 3 Neonatal Intensive Care Trusts across Operational Delivery Networks (including Yorkshire & Humber) on core baby record completeness (MSD401), 1-hour skin-to-skin thermal care, early pathway booking (≤10 wks), low 5-minute Apgar (<7), first-feed breastmilk nutrition and feeding documentation.",
+            prep: "Ingested 5 years (2019/20–2023/24) of official NHS England Maternity Services Data Set (MSDS) and Data Quality CSVs (files.digital.nhs.uk), harmonised schema changes across annual releases, and built star-schema lookup tables via a repeatable Python pipeline.",
+            validation: "Separated core MSD401 baby fields from unmapped optional items (M401090/M401180), applied NHS England statistical disclosure control (rounding to nearest 5, suppressing <8 records, flagging <25 for wide 95% CIs) and built 22 automated reconciliation checks.",
+            outcome: "Enables instant benchmarking by ODN region or individual trust (e.g. Leeds Children's Hospital, ranked 1st of 24 on core baby record completeness at 97.4%) across 5-year trends, 16 MSDS data items, and 11 gestational age bands."
         },
         finance: {
             title: "Corporate Finance & Commercial Variance Dashboard",
@@ -45,16 +45,16 @@
             outcome: "Highlighted over £140K in misallocated departmental expenses, gave budget holders self-service variance drill-downs, and reduced month-end variance reporting time by 65%."
         },
         nhs: {
-            title: "NHS Neonatal Intensive Care Outcomes 2023/24: Clinical Audit & BadgerNet Data Quality",
-            question: "How do England's 24 Level 3 Neonatal Intensive Care Units compare on BadgerNet episode completeness and clinical care?",
+            title: "NHS Neonatal Intensive Care Outcomes 2023/24: Clinical Audit & MSDS Data Quality",
+            question: "How do England's 24 Level 3 Neonatal Intensive Care Trusts compare on baby record completeness (MSD401) and perinatal care?",
             embedUrl: "https://subramanian-ms.github.io/nhs-neonatal-outcomes-dashboard/",
-            coverImg: "images/NHS_Neonatal_cover.png",
+            coverImg: "images/NHS_Neonatal_cover.png?v=20261031d",
             coverAlt: "NHS Neonatal Intensive Care Outcomes 2023/24 Dashboard",
-            tags: ["Python (pandas)", "BadgerNet data quality", "NHS disclosure control", "NNAP clinical audit", "22 automated checks"],
-            summary: "An interactive clinical audit dashboard comparing all 24 English Level 3 Neonatal Intensive Care Units (NICUs) across Operational Delivery Networks (including Yorkshire & Humber) on BadgerNet completeness, admission normothermia, deferred cord clamping, late-onset infection, breastmilk nutrition and 2-year follow-up.",
-            prep: "Filtered multi-year NNAP and BadgerNet tables to the 24 Level 3 NICUs by NHS ODS code, standardised clinical cohort definitions, and built unit and ODN network lookup tables via a repeatable Python pipeline.",
-            validation: "Applied NHS England statistical disclosure control (rounding to nearest 5, suppressing <8 episodes, flagging <25 for wide 95% CIs) and built 22 automated reconciliation checks against published tables.",
-            outcome: "Enables instant benchmarking by ODN region or individual hospital (e.g. Leeds Children's Hospital) against the National NICU average across 7-year trajectories, 16 clinical cohorts, and 14 gestational age bands."
+            tags: ["Python (pandas)", "NHS England open data", "NHS disclosure control", "MSDS data quality", "22 automated checks"],
+            summary: "An interactive clinical and data-quality dashboard comparing all 24 English Level 3 Neonatal Intensive Care Trusts across Operational Delivery Networks (including Yorkshire & Humber) on core baby record completeness (MSD401), 1-hour skin-to-skin thermal care, early pathway booking (≤10 wks), low 5-minute Apgar (<7), first-feed breastmilk nutrition and feeding documentation.",
+            prep: "Ingested 5 years (2019/20–2023/24) of official NHS England Maternity Services Data Set (MSDS) and Data Quality CSVs (files.digital.nhs.uk), harmonised schema changes across annual releases, and built star-schema lookup tables via a repeatable Python pipeline.",
+            validation: "Separated core MSD401 baby fields from unmapped optional items (M401090/M401180), applied NHS England statistical disclosure control (rounding to nearest 5, suppressing <8 records, flagging <25 for wide 95% CIs) and built 22 automated reconciliation checks.",
+            outcome: "Enables instant benchmarking by ODN region or individual trust (e.g. Leeds Children's Hospital, ranked 1st of 24 on core baby record completeness at 97.4%) across 5-year trends, 16 MSDS data items, and 11 gestational age bands."
         },
         aviation: {
             title: "UK Civil Aviation Flight Reliability & Delay Benchmarking (Jan to May 2025)",
