@@ -14,11 +14,25 @@
             title: "Russell Group Graduate Outcomes 2023/24: University Benchmarking Dashboard",
             question: "What were graduates of each Russell Group university doing 15 months after finishing?",
             embedUrl: "https://subramanian-ms.github.io/russell-group-graduate-outcomes/",
+            coverImg: "images/Russell cover pic.png",
+            coverAlt: "Russell Group Graduate Outcomes 2023/24 Dashboard",
             tags: ["Python (pandas)", "Data modelling", "Data validation", "KPI benchmarking", "HESA open data"],
             summary: "An interactive dashboard answering one question: what were graduates of each Russell Group university doing 15 months after finishing? It compares all 24 universities on employment, further study, unemployment, graduate-level job rate and salary band, using HESA open data.",
             prep: "Filtered raw HESA data to the 24 universities, cleaned and de-duplicated it, and built university and subject lookup tables using Python (pandas) and a repeatable build script.",
             validation: "Documented how every measure is calculated and built 22 automated checks reconciling the results to HESA published tables.",
             outcome: "Colour-codes each university above or below the Russell Group average, with rankings, seven-year trends, subject-level gaps and salary bands."
+        },
+        nicu: {
+            title: "NHS Neonatal Intensive Care Outcomes 2023/24: Clinical Audit & BadgerNet Data Quality",
+            question: "How do England's 24 Level 3 Neonatal Intensive Care Units compare on BadgerNet episode completeness and clinical care?",
+            embedUrl: "https://subramanian-ms.github.io/nhs-neonatal-outcomes-dashboard/",
+            coverImg: "images/NHS_Neonatal_cover.png",
+            coverAlt: "NHS Neonatal Intensive Care Outcomes 2023/24 Dashboard",
+            tags: ["Python (pandas)", "BadgerNet data quality", "NHS disclosure control", "NNAP clinical audit", "22 automated checks"],
+            summary: "An interactive clinical audit dashboard comparing all 24 English Level 3 Neonatal Intensive Care Units (NICUs) across Operational Delivery Networks (including Yorkshire & Humber) on BadgerNet completeness, admission normothermia, deferred cord clamping, late-onset infection, breastmilk nutrition and 2-year follow-up.",
+            prep: "Filtered multi-year NNAP and BadgerNet tables to the 24 Level 3 NICUs by NHS ODS code, standardised clinical cohort definitions, and built unit and ODN network lookup tables via a repeatable Python pipeline.",
+            validation: "Applied NHS England statistical disclosure control (rounding to nearest 5, suppressing <8 episodes, flagging <25 for wide 95% CIs) and built 22 automated reconciliation checks against published tables.",
+            outcome: "Enables instant benchmarking by ODN region or individual hospital (e.g. Leeds Children's Hospital) against the National NICU average across 7-year trajectories, 16 clinical cohorts, and 14 gestational age bands."
         },
         finance: {
             title: "Corporate Finance & Commercial Variance Dashboard",
@@ -262,9 +276,17 @@
             dashTags.innerHTML = data.tags.map(tag => `<span class="tag">${tag}</span>`).join('');
         }
 
-        // Show Cover Image for Russell Group, Live Embed for Power BI
-        if (tabId === 'hesa') {
-            if (dashCoverPreview) dashCoverPreview.style.display = 'block';
+        // Show Cover Image for web-app dashboards (Russell Group & NHS Neonatal), Live Embed for Power BI
+        const dashCoverImg = document.getElementById('dashCoverImg');
+        if (data.coverImg) {
+            if (dashCoverPreview) {
+                dashCoverPreview.href = data.embedUrl;
+                dashCoverPreview.style.display = 'block';
+            }
+            if (dashCoverImg) {
+                dashCoverImg.src = data.coverImg;
+                dashCoverImg.alt = data.coverAlt || data.title;
+            }
             if (dashIframe) dashIframe.style.display = 'none';
         } else {
             if (dashCoverPreview) dashCoverPreview.style.display = 'none';
@@ -300,8 +322,8 @@
     // Fullscreen stage toggle
     if (dashFullscreenBtn && dashStage) {
         dashFullscreenBtn.addEventListener('click', () => {
-            if (currentTab === 'hesa') {
-                window.open(DASHBOARD_DATA.hesa.embedUrl, '_blank');
+            if (DASHBOARD_DATA[currentTab] && DASHBOARD_DATA[currentTab].coverImg) {
+                window.open(DASHBOARD_DATA[currentTab].embedUrl, '_blank');
                 return;
             }
             if (!document.fullscreenElement) {
