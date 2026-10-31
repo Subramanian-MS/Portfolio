@@ -26,7 +26,7 @@
             title: "NHS Neonatal Intensive Care Outcomes 2023/24: Clinical Audit & MSDS Data Quality",
             question: "How do England's 24 Level 3 Neonatal Intensive Care Trusts compare on baby record completeness (MSD401) and perinatal care?",
             embedUrl: "https://subramanian-ms.github.io/nhs-neonatal-outcomes-dashboard/",
-            coverImg: "images/NHS_Neonatal_cover.png?v=20261031f",
+            coverImg: "images/NHS_Neonatal_cover_clean.png?v=20261031h",
             coverAlt: "NHS Neonatal Intensive Care Outcomes 2023/24 Dashboard",
             tags: ["Python (pandas)", "NHS England open data", "NHS disclosure control", "MSDS data quality", "22 automated checks"],
             summary: "An interactive clinical and data-quality dashboard comparing all 24 English Level 3 Neonatal Intensive Care Trusts across Operational Delivery Networks (including Yorkshire & Humber) on core baby record completeness (MSD401), 1-hour skin-to-skin thermal care, early pathway booking (≤10 wks), low 5-minute Apgar (<7), first-feed breastmilk nutrition and feeding documentation.",
@@ -48,7 +48,7 @@
             title: "NHS Neonatal Intensive Care Outcomes 2023/24: Clinical Audit & MSDS Data Quality",
             question: "How do England's 24 Level 3 Neonatal Intensive Care Trusts compare on baby record completeness (MSD401) and perinatal care?",
             embedUrl: "https://subramanian-ms.github.io/nhs-neonatal-outcomes-dashboard/",
-            coverImg: "images/NHS_Neonatal_cover.png?v=20261031f",
+            coverImg: "images/NHS_Neonatal_cover_clean.png?v=20261031h",
             coverAlt: "NHS Neonatal Intensive Care Outcomes 2023/24 Dashboard",
             tags: ["Python (pandas)", "NHS England open data", "NHS disclosure control", "MSDS data quality", "22 automated checks"],
             summary: "An interactive clinical and data-quality dashboard comparing all 24 English Level 3 Neonatal Intensive Care Trusts across Operational Delivery Networks (including Yorkshire & Humber) on core baby record completeness (MSD401), 1-hour skin-to-skin thermal care, early pathway booking (≤10 wks), low 5-minute Apgar (<7), first-feed breastmilk nutrition and feeding documentation.",
@@ -283,7 +283,7 @@
         if (data.coverImg) {
             if (dashCoverPreview) {
                 dashCoverPreview.href = data.embedUrl;
-                dashCoverPreview.style.display = 'block';
+                dashCoverPreview.style.display = 'flex';
             }
             if (dashCoverImg) {
                 dashCoverImg.src = data.coverImg;
