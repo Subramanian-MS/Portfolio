@@ -45,14 +45,16 @@
             outcome: "Highlighted over £140K in misallocated departmental expenses, gave budget holders self-service variance drill-downs, and reduced month-end variance reporting time by 65%."
         },
         nhs: {
-            title: "NHS Healthcare Capacity & Clinical Patient Flow",
-            question: "Where are inpatient bed bottlenecks occurring, and which clinical trusts exceed target wait-time thresholds?",
-            embedUrl: "https://app.powerbi.com/view?r=eyJrIjoiZGRlZWZlM2QtNmMxNS00YWQ2LWI4ZTctNjhlMGQ2MzY2Y2RkIiwidCI6ImYyOTBhNWNhLTNlMDUtNDM1ZC04YWIzLTVhM2IwOWRhYWFiMyJ9",
-            tags: ["Power BI", "Healthcare analytics", "Time intelligence", "Bed occupancy", "NHS data standards"],
-            summary: "An operational healthcare dashboard tracking bed capacity, admissions, and discharge delays across acute hospital trusts to help operational planners prevent A&E bottlenecks.",
-            prep: "Ingested and standardized NHS hospital episode records across multiple trusts, created automated time-intelligence calendars, and built clinical specialty lookup hierarchies.",
-            validation: "Standardized NHS operational indicators including Average Length of Stay (ALOS), delayed discharge transfers of care (DToC), and bed occupancy percentage against NHS England target thresholds.",
-            outcome: "Surfaced acute ward occupancy bottlenecks early, enabling operational managers to reallocate beds proactively and contributing to a 22% reduction in discharge delays."
+            title: "NHS Neonatal Intensive Care Outcomes 2023/24: Clinical Audit & BadgerNet Data Quality",
+            question: "How do England's 24 Level 3 Neonatal Intensive Care Units compare on BadgerNet episode completeness and clinical care?",
+            embedUrl: "https://subramanian-ms.github.io/nhs-neonatal-outcomes-dashboard/",
+            coverImg: "images/NHS_Neonatal_cover.png",
+            coverAlt: "NHS Neonatal Intensive Care Outcomes 2023/24 Dashboard",
+            tags: ["Python (pandas)", "BadgerNet data quality", "NHS disclosure control", "NNAP clinical audit", "22 automated checks"],
+            summary: "An interactive clinical audit dashboard comparing all 24 English Level 3 Neonatal Intensive Care Units (NICUs) across Operational Delivery Networks (including Yorkshire & Humber) on BadgerNet completeness, admission normothermia, deferred cord clamping, late-onset infection, breastmilk nutrition and 2-year follow-up.",
+            prep: "Filtered multi-year NNAP and BadgerNet tables to the 24 Level 3 NICUs by NHS ODS code, standardised clinical cohort definitions, and built unit and ODN network lookup tables via a repeatable Python pipeline.",
+            validation: "Applied NHS England statistical disclosure control (rounding to nearest 5, suppressing <8 episodes, flagging <25 for wide 95% CIs) and built 22 automated reconciliation checks against published tables.",
+            outcome: "Enables instant benchmarking by ODN region or individual hospital (e.g. Leeds Children's Hospital) against the National NICU average across 7-year trajectories, 16 clinical cohorts, and 14 gestational age bands."
         },
         aviation: {
             title: "UK Civil Aviation Flight Reliability & Delay Benchmarking (Jan to May 2025)",
