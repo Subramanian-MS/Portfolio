@@ -29,10 +29,10 @@
             coverImg: "images/NHS_Neonatal_cover_clean.png?v=20261031i",
             coverAlt: "NHS Neonatal Intensive Care Outcomes 2023/24 Dashboard",
             tags: ["Python (pandas)", "NHS England open data", "NHS disclosure control", "MSDS data quality", "22 automated checks"],
-            summary: "An interactive clinical and data-quality dashboard comparing all 24 English Level 3 Neonatal Intensive Care Trusts across Operational Delivery Networks (including Yorkshire & Humber) on core baby record completeness (MSD401), 1-hour skin-to-skin thermal care, early pathway booking (≤10 wks), low 5-minute Apgar (<7), first-feed breastmilk nutrition and feeding documentation.",
+            summary: "An interactive clinical and data-quality dashboard comparing all 24 English Level 3 Neonatal Intensive Care Trusts across Operational Delivery Networks (including Yorkshire & Humber) on MSD401 baby record completeness, 1-hour skin-to-skin thermal care, early pathway booking (≤10 wks), low 5-minute Apgar (<7), first-feed breastmilk nutrition and feeding documentation.",
             prep: "Ingested 5 years (2019/20–2023/24) of official NHS England Maternity Services Data Set (MSDS) and Data Quality CSVs (files.digital.nhs.uk), harmonised schema changes across annual releases, and built star-schema lookup tables via a repeatable Python pipeline.",
-            validation: "Separated core MSD401 baby fields from unmapped optional items (M401090/M401180), applied NHS England statistical disclosure control (rounding to nearest 5, suppressing <8 records, flagging <25 for wide 95% CIs) and built 22 automated reconciliation checks.",
-            outcome: "Enables instant benchmarking by ODN region or individual trust (e.g. Leeds Children's Hospital, ranked 1st of 24 on core baby record completeness at 97.4%) across 5-year trends, 16 MSDS data items, and 11 gestational age bands."
+            validation: "Benchmarked completeness across all 27 baby demographic & birth details fields in NHS England's MSD401 table, applied statistical disclosure controls (rounding to nearest 5, suppressing <8 records, flagging <25 for wide 95% CIs), and built 22 automated reconciliation checks.",
+            outcome: "Enables instant benchmarking across all 24 English Level 3 NICU Trusts (Hull Royal Infirmary 1st at 96.0%, Rosie Cambridge 2nd at 93.0%, Leeds Children's Hospital 3rd at 89.6% vs 85.0% national average), with 5-year trends, 16 MSDS data items, and 11 gestational age bands."
         },
         finance: {
             title: "Corporate Finance & Commercial Variance Dashboard",
@@ -51,10 +51,10 @@
             coverImg: "images/NHS_Neonatal_cover_clean.png?v=20261031i",
             coverAlt: "NHS Neonatal Intensive Care Outcomes 2023/24 Dashboard",
             tags: ["Python (pandas)", "NHS England open data", "NHS disclosure control", "MSDS data quality", "22 automated checks"],
-            summary: "An interactive clinical and data-quality dashboard comparing all 24 English Level 3 Neonatal Intensive Care Trusts across Operational Delivery Networks (including Yorkshire & Humber) on core baby record completeness (MSD401), 1-hour skin-to-skin thermal care, early pathway booking (≤10 wks), low 5-minute Apgar (<7), first-feed breastmilk nutrition and feeding documentation.",
+            summary: "An interactive clinical and data-quality dashboard comparing all 24 English Level 3 Neonatal Intensive Care Trusts across Operational Delivery Networks (including Yorkshire & Humber) on MSD401 baby record completeness, 1-hour skin-to-skin thermal care, early pathway booking (≤10 wks), low 5-minute Apgar (<7), first-feed breastmilk nutrition and feeding documentation.",
             prep: "Ingested 5 years (2019/20–2023/24) of official NHS England Maternity Services Data Set (MSDS) and Data Quality CSVs (files.digital.nhs.uk), harmonised schema changes across annual releases, and built star-schema lookup tables via a repeatable Python pipeline.",
-            validation: "Separated core MSD401 baby fields from unmapped optional items (M401090/M401180), applied NHS England statistical disclosure control (rounding to nearest 5, suppressing <8 records, flagging <25 for wide 95% CIs) and built 22 automated reconciliation checks.",
-            outcome: "Enables instant benchmarking by ODN region or individual trust (e.g. Leeds Children's Hospital, ranked 1st of 24 on core baby record completeness at 97.4%) across 5-year trends, 16 MSDS data items, and 11 gestational age bands."
+            validation: "Benchmarked completeness across all 27 baby demographic & birth details fields in NHS England's MSD401 table, applied statistical disclosure controls (rounding to nearest 5, suppressing <8 records, flagging <25 for wide 95% CIs), and built 22 automated reconciliation checks.",
+            outcome: "Enables instant benchmarking across all 24 English Level 3 NICU Trusts (Hull Royal Infirmary 1st at 96.0%, Rosie Cambridge 2nd at 93.0%, Leeds Children's Hospital 3rd at 89.6% vs 85.0% national average), with 5-year trends, 16 MSDS data items, and 11 gestational age bands."
         },
         aviation: {
             title: "UK Civil Aviation Flight Reliability & Delay Benchmarking (Jan to May 2025)",
