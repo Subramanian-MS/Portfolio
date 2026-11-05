@@ -65,18 +65,6 @@
             prep: "Ingested 500,000+ commercial flight records from UK Civil Aviation Authority (CAA) monthly open datasets, normalized irregular timestamps, and built airport and airline dimension lookups using Python and Power Query.",
             validation: "Defined on-time arrival rate (within 15 minutes of schedule), route delay percentiles, and cancellation rates, cross-verified against CAA published monthly punctuality tables.",
             outcome: "Identified carrier-specific turnaround bottlenecks and delay clusters at major UK hubs, replacing 15+ hours of recurring monthly manual reporting with an automated self-service dashboard."
-        },
-        credit: {
-            title: "Commercial Credit Risk Scorecard & Model Monitoring Platform",
-            question: "How do commercial credit scorecards hold up during economic stress, and where does risk drift occur?",
-            embedUrl: "https://subramanian-ms.github.io/credit-risk-model-monitoring/",
-            coverImg: "images/Credit_Risk_cover.png",
-            coverAlt: "Commercial Credit Risk Scorecard & Model Monitoring Platform",
-            tags: ["Python (pandas)", "Scikit-learn", "Credit Risk", "PRA SS3/18", "Model Monitoring", "22 automated checks"],
-            summary: "An empirical credit scoring and model monitoring platform built on 604,786 commercial loans (FY2000–FY2009) with out-of-time crisis stress testing (Population Stability Index / CSI) through the 2008 Financial Crisis and UK corporate insolvency benchmarking.",
-            prep: "Ingested 604,786 closed commercial loans from U.S. SBA FOIA open data and 25 years of UK Insolvency Service statistics, removed post-origination leakage fields, and created standard banking intervals.",
-            validation: "Fitted a Weight of Evidence (WoE) Logistic Scorecard (Gini = 0.58) benchmarked against a Gradient Boosting Challenger (Gini = 0.69), calibrated points to 600 at 50:1 odds (PDO = 20), and built 22 automated reconciliation checks.",
-            outcome: "Delivers an interactive risk checker with adverse action points attribution, tracks yearly PSI/CSI and O/E calibration RAG alerts across the 2008 crisis, and evaluates default rates across 11 industry sectors."
         }
     };
 
